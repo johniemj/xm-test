@@ -1,0 +1,14 @@
+{
+  "build/app.css": "/build/app.css",
+  "build/app.js": "/build/app.js",
+  "build/appJS.js": "/build/appJS.js",
+  "build/charts.js": "/build/charts.js",
+  "build/jqueryUI.js": "/build/jqueryUI.js",
+  "build/runtime.js": "/build/runtime.js",
+  "build/vendors~app.css": "/build/vendors~app.css",
+  "build/vendors~app.js": "/build/vendors~app.js",
+  "build/vendors~appJS~charts~jqueryUI.js": "/build/vendors~appJS~charts~jqueryUI.js",
+  "build/vendors~app~jqueryUI.js": "/build/vendors~app~jqueryUI.js",
+  "build/vendors~charts.js": "/build/vendors~charts.js",
+  "build/vendors~charts~jqueryUI.js": "/build/vendors~charts~jqueryUI.js"
+}

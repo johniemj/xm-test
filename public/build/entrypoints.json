@@ -1,0 +1,41 @@
+{
+  "entrypoints": {
+    "app": {
+      "js": [
+        "/build/runtime.js",
+        "/build/vendors~app~jqueryUI.js",
+        "/build/vendors~app.js",
+        "/build/app.js"
+      ],
+      "css": [
+        "/build/vendors~app.css",
+        "/build/app.css"
+      ]
+    },
+    "jqueryUI": {
+      "js": [
+        "/build/runtime.js",
+        "/build/vendors~appJS~charts~jqueryUI.js",
+        "/build/vendors~app~jqueryUI.js",
+        "/build/vendors~charts~jqueryUI.js",
+        "/build/jqueryUI.js"
+      ]
+    },
+    "charts": {
+      "js": [
+        "/build/runtime.js",
+        "/build/vendors~appJS~charts~jqueryUI.js",
+        "/build/vendors~charts~jqueryUI.js",
+        "/build/vendors~charts.js",
+        "/build/charts.js"
+      ]
+    },
+    "appJS": {
+      "js": [
+        "/build/runtime.js",
+        "/build/vendors~appJS~charts~jqueryUI.js",
+        "/build/appJS.js"
+      ]
+    }
+  }
+}
