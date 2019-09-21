@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% form_theme form 'bootstrap_4_layout.html.twig' %}
+
+{% block title %}{% endblock %}
+
+{% block body %}
+  <div style="padding:20px">
+    <h1>Search for historical quotes</h1>
+    {{ form(form) }}
+    {% if data %}
+    <h3>Results for selected values</h3>
+    <table class="results table table-bordered table-striped table-hover">
+      <thead class="thead-inverse">
+        <tr>
+          <th>Date</th>
+          <th>Open</th>
+          <th>High</th>
+          <th>Low</th>
+          <th>Close</th>
+          <th>Volume</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for row in data %}
+          <tr>
+            <td class="date-cell">{{ row.Date }}</td>
+            <td class="open-cell">{{ row.Open }}</td>
+            <td class="high-cell">{{ row.High }}</td>
+            <td class="low-cell">{{ row.Low }}</td>
+            <td class="close-cell">{{ row.Close }}</td>
+            <td class="volume-cell">{{ row.Volume }}</td>
+          </tr>
+        {% endfor %}
+        <tr>
+          <td colspan="6" style="background:#fff"><canvas id="chart" width="500" height="300"></canvas></td>
+        </tr>
+      </tbody>
+  </div>    
+{% endif %}
+{% endblock %}

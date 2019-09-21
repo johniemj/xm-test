@@ -1,0 +1,8 @@
+swiftmailer:
+  transport: smtp
+  username: test@test.com
+  password: test
+  host: smtp.test.com
+  port: 465
+  encryption: ssl
+  auth_mode: login
